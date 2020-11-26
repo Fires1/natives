@@ -16,6 +16,8 @@ Cam CREATE_CAM(char* camName, BOOL p1);
 "TIMED_SPLINE_CAMERA"  
 ```
 
+Note: This cannot be ran in the console command manager thread, if using a camera activate through a command, trigger an event to handle the creation of the camera. Otherwise this method will always return `-1`.
+
 ## Parameters
 * **camName**: 
 * **p1**: 
